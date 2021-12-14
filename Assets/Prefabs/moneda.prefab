@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5639718687223586128}
   - component: {fileID: 5693128594997239938}
   - component: {fileID: -2449474400295964592}
+  - component: {fileID: 1698103427012635610}
   m_Layer: 0
   m_Name: moneda
-  m_TagString: Untagged
+  m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,3 +110,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 100
+--- !u!114 &1698103427012635610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466689568748289945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0ca398d09ea6744a7f66b95515cf32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movY: 200
+  maxX: 200
+  minX: 0
+  movZ: 200
