@@ -17,9 +17,11 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
-    private float turnSpeed = 70;
+    private float turnSpeed = 70f;
 
     public GameObject proyectilePrefab;
+    // private Vector3 proyOffset;
+    // private float Offset = 1f;
 
     private AudioSource playerAudioSource;
     public AudioClip shotClip;
@@ -41,6 +43,8 @@ public class PlayerController : MonoBehaviour
 
         StartCoroutine("SpawnRandomTarget");
 
+        // proyOffset = new Vector3(Offset, transform.position.y, transform.position.z);
+
     }
 
     
@@ -48,9 +52,11 @@ public class PlayerController : MonoBehaviour
     void Update()
 
     {
-        // Límites
+        // Movimiento hace adelante
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
+        // Límites
 
 
         if (transform.position.y > movY)

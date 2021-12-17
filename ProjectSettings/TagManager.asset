@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Good
   - Bad
+  - Bullet
   layers:
   - Default
   - TransparentFX
